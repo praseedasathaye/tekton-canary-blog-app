@@ -8,9 +8,9 @@ var AWSXRay = require('aws-xray-sdk');
 app.use(AWSXRay.express.openSegment('Product-Detail-V1'));
 
 app.get("/catalogDetail", (req, res, next) => {
-  console.log("Catalog Detail Version 4 Get Request Successful");
+  console.log("Catalog Detail Version 5 Get Request Successful");
   res.json({
-             "version":"4",
+             "version":"5",
              "vendors":[ "ABC.com", "XYZ.com", "PQR.com", "SPAIN.com"]
               } )
 });
